@@ -1,7 +1,7 @@
 <?php
 
-class PEIA_Gearman_Context_Plugin 
-	extends PEIA_ABS_Context_Plugin {
+class PEIP_Gearman_Context_Plugin 
+	extends PEIP_ABS_Context_Plugin {
 
 	protected static $builders = array(
 		'gearman_worker' => 'createGearmanWorker',

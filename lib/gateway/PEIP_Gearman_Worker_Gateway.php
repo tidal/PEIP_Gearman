@@ -1,7 +1,7 @@
 <?php
 
 class PEIP_Gearman_Worker_Gateway 
-	extends PEIA_Simple_Messaging_Gateway {
+	extends PEIP_Simple_Messaging_Gateway {
 
 	public $job;	
 		
@@ -15,13 +15,13 @@ class PEIP_Gearman_Worker_Gateway
 		return $this->job;
 	}
 	
-	public function setReplyChannel(PEIA_INF_Channel $replyChannel){
-		if(!($replyChannel instanceof PEIA_INF_Subscribable_Channel)){
-			//throw new InvalidArgumentException('reply channel must be instance of PEIA_INF_Subscribable_Channel.');
+	public function setReplyChannel(PEIP_INF_Channel $replyChannel){
+		if(!($replyChannel instanceof PEIP_INF_Subscribable_Channel)){
+			throw new InvalidArgumentException('reply channel must be instance of PEIP_INF_Subscribable_Channel.');
 		}		
 		$this->replyChannel = $replyChannel;
 		$gateway = $this;
-		$handler = new PEIA_Callable_Handler(function($event) use($gateway){
+		$handler = new PEIP_Callable_Handler(function($event) use($gateway){
 			if($gateway->getJob()){
 				$message = $event->getHeader('MESSAGE');
 				echo "\ncallback job";

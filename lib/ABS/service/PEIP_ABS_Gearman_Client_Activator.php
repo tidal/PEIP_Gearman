@@ -1,14 +1,14 @@
 <?php
 
 abstract class PEIP_ABS_Gearman_Client_Activator 
-	extends PEIA_Pipe {
+	extends PEIP_Pipe {
 	
 	protected 
 		$client,
 		$taskName,
 		$taskMethod;
 	
-	public function __construct(GearmanClient $client, $taskName, PEIA_INF_Channel $inputChannel, PEIA_INF_Channel $outputChannel = NULL){
+	public function __construct(GearmanClient $client, $taskName, PEIP_INF_Channel $inputChannel, PEIP_INF_Channel $outputChannel = NULL){
 		$this->client = $client;
 		$this->setTaskName($taskName);
 		$this->setTaskCallbacks();
@@ -28,7 +28,7 @@ abstract class PEIP_ABS_Gearman_Client_Activator
 		$this->client->runTasks();	
 	}				
 
-	public function doReply(PEIA_INF_Message $message){
+	public function doReply(PEIP_INF_Message $message){
 		if(!$this->taskName){
 			throw new RuntimeException('No Task set.');
 		}		
