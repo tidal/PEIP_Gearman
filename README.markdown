@@ -10,7 +10,7 @@ run:<br>
 pear channel-discover pear.peip-project.de<br>
 pear install peip/peip_gearman
 <h3>Install From Download</h3>
-Download source from Downloads <a href="http://github.com/tidal/PEIP_Gearman/downloads">http://github.com/tidal/PEIP/downloads</a><br>
+Download source from Downloads <a href="http://github.com/tidal/PEIP_Gearman/downloads">http://github.com/tidal/PEIP_Gearman/downloads</a><br>
 Extract file to your include directory.
 <h3>Install From Source</h3>
 Change to one of your include directories.<br>
