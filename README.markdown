@@ -8,7 +8,7 @@ Installed Gearman PHP Extension: can be found <a href="http://gearman.org/?id=ge
 <h3>PEAR Install</h3>
 run:<br>
 pear channel-discover pear.peip-project.de<br>
-pear install peip/peip-gearman
+pear install peip/peip_gearman
 <h3>Install From Download</h3>
 Download source from Downloads <a href="http://github.com/tidal/PEIP_Gearman/downloads">http://github.com/tidal/PEIP/downloads</a><br>
 Extract file to your include directory.
