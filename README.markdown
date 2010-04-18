@@ -1,5 +1,5 @@
 <h1>PEIP_Gearman</h1>
-<em>PEIP extension for Gearman</em>
+<em>Gearman extension for PEIP</em>
 <h2>REQUIREMENTs:</h2>
 Installed PEIP Core: can be found <a href="http://github.com/tidal/PEIP">here</a><br>
 Installed Gearman Server: can be found <a href="http://gearman.org">here</a><br> 
